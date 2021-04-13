@@ -1,1 +1,69 @@
 /* You can add global styles to this file, and also import other style files */
+.container {
+    height: 100%;
+    width: 100%;
+    background: #42a5f1;
+}
+
+body {
+    background:#42a5f1;
+    font-family: sans-serif
+}
+
+
+
+.header {
+    color:yellow;
+    padding-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    width: 250px;
+    height: 163px;
+    margin-left: 25px;
+    font-weight: bold;
+}
+
+.header__listItems {
+    display: flex;
+    color: yellow;
+}
+
+.header__item {
+    list-style: none;
+    margin-right: 50px;
+}
+
+.header__link,
+.header__link:active {
+    text-decoration: none;
+    color: yellow;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.buttons{
+    padding-top: 50px;
+}
+.buttons_items{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.button_item_single{
+    color: yellow;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.content__button{
+    width: 120px;
+    height: 120px;
+    transform: translateY(-5px);
+
+}
+.banner{
+    display: flex;
+}

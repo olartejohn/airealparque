@@ -1,0 +1,20 @@
+{
+  "hosting": {
+    "target":"aire-al-parque",
+    "public": "dist/aire-al-parque",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  },
+  "remoteconfig": {
+    "template": "remoteconfig.template.json"
+  }
+}

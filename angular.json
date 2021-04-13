@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "aire-al-parque"
+    }
+  },
+  "defaultProject": "aire-al-parque",
+  "cli": {
+    "analytics": "94fcc977-0b6e-4a97-9480-8f45542cf1fe"
+  }
 }

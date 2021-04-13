@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "aire-al-parque": {
+      "hosting": {
+        "aire-al-parque": [
+          "aire-al-parque"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "aire-al-parque"
+  }
+}
