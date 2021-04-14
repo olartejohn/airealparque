@@ -10,7 +10,7 @@
                   <a class="header__link" href="#" routerLink="/buscar">Aire en mi parque</a>
               </li>
               <li class="header__item">
-                  <a class="header__link" href="#" routerLink="/reporte">Iniciar sesión</a>
+                  <a class="header__link" href="#" routerLink="/reporte" (click)="authService.loginWithGoogle()">Iniciar sesión</a>
               </li>
           </ul>
       </nav>
@@ -18,6 +18,7 @@
   </div>
   <div class="banner">
     <img  src="assets/img/med_clouds.png" >
+    {{authService.user$ | async | json}}
   </div>
   
   <div class="buttons">

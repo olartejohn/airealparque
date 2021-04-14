@@ -117,6 +117,10 @@
               "devServerTarget": "aire-al-parque:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {}
         }
       }
     }

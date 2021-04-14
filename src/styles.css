@@ -1,4 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: "Gothic";
+    src: local("Gothic"), url(./assets/fonts/LeagueGothicRegular.otf) format("truetype");
+}
 .container {
     height: 100%;
     width: 100%;
@@ -7,7 +11,7 @@
 
 body {
     background:#42a5f1;
-    font-family: sans-serif
+    font-family: "Gothic";
 }
 
 
@@ -41,7 +45,9 @@ body {
 .header__link:active {
     text-decoration: none;
     color: yellow;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: "Gothic";
+    font-size: 60px;
+    text-transform: uppercase;
 }
 
 
@@ -54,13 +60,17 @@ body {
     align-items: center;
 }
 .button_item_single{
+    list-style: none;
     color: yellow;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: "Gothic";
+    font-size: 40px;
+    text-transform: uppercase;
 
 }
 .content__button{
-    width: 120px;
-    height: 120px;
+
+    width: 240px;
+    height: 240px;
     transform: translateY(-5px);
 
 }
