@@ -7,7 +7,7 @@
                   <a class="header__link" href="#" routerLink="/formacion"></a>
               </li>
               <li class="header__item">
-                  <a class="header__link" href="#" routerLink="/buscar">Aire en mi parque</a>
+                  <a class="header__link" href="#" routerLink="/principalParques">Aire en mi parque</a>
               </li>
               <li class="header__item">
                   <a class="header__link" href="#" routerLink="/reporte" (click)="authService.loginWithGoogle()">Iniciar sesión</a>
@@ -17,29 +17,12 @@
  
   </div>
   <div class="banner">
-    <img  src="assets/img/med_clouds.png" >
-    {{authService.user$ | async | json}}
   </div>
   
-  <div class="buttons">
-    <ul class="buttons_items">
-        <li class="button_item_single">
-            <img class="content__button" src="assets/img/park.png" >
-            <p>Parques</p>
-        </li>
-        <li class="button_item_single">
-            <img class="content__button" src="assets/img/calculator.jpg" >
-            <p>Calculadora</p>
-        </li>
-        <li class="button_item_single">
-            <img class="content__button" src="assets/img/data.webp" >
-            <p>Datos</p>
-        </li>
-
-    </ul>
-
+  <div class="">
+          
+      <router-outlet></router-outlet>
   </div>
-  <!--<router-outlet></router-outlet>-->
 </div>
 
 

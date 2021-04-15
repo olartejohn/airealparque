@@ -77,3 +77,15 @@ body {
 .banner{
     display: flex;
 }
+.parques_map{
+
+    width: 960px;
+    height:615px;
+    
+    
+}
+.parques_frame{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
