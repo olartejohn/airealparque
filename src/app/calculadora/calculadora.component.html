@@ -1,0 +1,42 @@
+<div class="form_container">
+    <form action="" class="form_component">
+        <div class="content_data">
+            <label class="font_data" for="fname">Genero:</label>
+            <select class="select__form">
+                <option *ngFor="let genero of generos" >
+                    {{ genero.value }}
+                </option>
+            </select><br>
+            <label class="font_data" for="fname">Edad:</label>
+            <select class="select__form">
+                <option *ngFor="let edad of edades" >
+                    {{ edad.value }}
+                </option>
+            </select><br>
+            
+            <label class="font_data" for="fname">Parque:</label>
+            <select class="select__form">
+                <option *ngFor="let parque of parques" >
+                  {{ parque.value }}
+                </option>
+              </select><br>
+            
+            <label class="font_data" for="fname">Dias:</label>
+            <select class="select__form">
+                <option *ngFor="let dia of dias" >
+                  {{ dia.value }}
+                </option>
+              </select><br>
+            
+        </div>
+        <div class="">
+            <div class="actions">
+                <button type="submit" class="btn_form">recomendación</button>
+            </div>
+
+        </div>
+
+    </form>
+
+
+</div>

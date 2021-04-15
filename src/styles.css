@@ -22,6 +22,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-bottom: 60px;
 }
 
 .header__logo {
@@ -88,4 +89,29 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.font_data{
+    color: rgb(7, 7, 133);
+    font-family: "Gothic";
+    font-size: 40px;
+    text-transform: uppercase;
+    padding-right: 25px;
+    padding-left: 70px;
+}
+.select__form{
+    font-family: "Gothic";
+    font-size: 20px;
+}
+.btn_form{
+    font-family: "Gothic";
+    background:yellow;
+    line-height: 60px;
+    width: 250px;
+    position: absolute;
+    left: 50%;
+    margin:0 0 0 -125px;
+    border-radius: 6px;
+    font-size: 3em;
+    color:#015080;
+    text-transform: uppercase;
 }

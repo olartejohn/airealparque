@@ -8,6 +8,7 @@ import { environment } from '../environments/environment';
 import { ParquesComponent } from './parques/parques.component';
 import { AppRoutingModule } from './app.routing.module';
 import { PrincipalparquesComponent } from './principalparques/principalparques.component';
+import { CalculadoraComponent } from './calculadora/calculadora.component';
 
 
 
@@ -15,7 +16,8 @@ import { PrincipalparquesComponent } from './principalparques/principalparques.c
   declarations: [
     AppComponent,
     ParquesComponent,
-    PrincipalparquesComponent
+    PrincipalparquesComponent,
+    CalculadoraComponent
   ],
   imports: [
     BrowserModule,
