@@ -1,19 +1,12 @@
 <div class="form_container">
     <form action="" class="form_component">
         <div class="content_data">
-            <label class="font_data" for="fname">Genero:</label>
-            <select class="select__form">
-                <option *ngFor="let genero of generos" >
-                    {{ genero.value }}
-                </option>
-            </select><br>
+            <label class="font_data" for="fname">Talla:</label>
+            <input  class="select__form" autocomplete="off" type="text" id="lname"><br>
             <label class="font_data" for="fname">Edad:</label>
-            <select class="select__form">
-                <option *ngFor="let edad of edades" >
-                    {{ edad.value }}
-                </option>
-            </select><br>
-            
+            <input  class="select__form" autocomplete="off" type="text" id="lname"><br>
+            <label class="font_data" for="Cname">Peso: </label>
+                <input  class="select__form" autocomplete="off" type="text" id="lname"><br>
             <label class="font_data" for="fname">Parque:</label>
             <select class="select__form">
                 <option *ngFor="let parque of parques" >
@@ -21,7 +14,7 @@
                 </option>
               </select><br>
             
-            <label class="font_data" for="fname">Dias:</label>
+            <label class="font_data" for="fname">Rango Horario:</label>
             <select class="select__form">
                 <option *ngFor="let dia of dias" >
                   {{ dia.value }}
@@ -35,8 +28,13 @@
             </div>
 
         </div>
-
+       
     </form>
-
+    <div class="bot__telegram">
+        <a href="https://t.me/respirabot_bot" class="bot_header__link" target="_blank">
+            <img class="bot_content__button" src="assets/img/telegram.png" >
+            <p>suscribite al bot</p>
+        </a>
+    </div>
 
 </div>

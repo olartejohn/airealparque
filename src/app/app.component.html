@@ -10,18 +10,32 @@
                   <a class="header__link" href="#" routerLink="/principalParques">Aire en mi parque</a>
               </li>
               <li class="header__item">
-                  <a class="header__link" href="#" routerLink="/reporte" (click)="authService.loginWithGoogle()">Iniciar sesión</a>
+                  <a class="header__link" href="#" *ngIf="authService.user$ | async; else noUser" (click)="authService.logout()">Logout</a>
+                <ng-template #noUser>
+                  <a class="header__link" href="#"  (click)="authService.loginWithGoogle()">Iniciar sesión</a>
+                </ng-template>
               </li>
           </ul>
       </nav>
  
   </div>
-  <div class="banner">
+  <div class="banner" *ngIf="authService.user$ | async as user;">
+    <p class="banner__name">Hola {{user.displayName}} !</p>
   </div>
   
-  <div class="">
+  <div>
           
       <router-outlet></router-outlet>
+  </div>
+
+  <div>
+      <footer class="footer">
+          <p class="footer__font">
+            Respiratón Colombia 2021 - Hackathon Virtual sobre Calidad del Aire<br>
+              AireAlParque <br>
+              <img class="footer__logo"  src="assets/img/piranga.png" >
+          </p> 
+        </footer>
   </div>
 </div>
 
