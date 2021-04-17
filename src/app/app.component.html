@@ -1,13 +1,13 @@
 <div class="container">
   <div class="header">
-      <img class="header__logo"  src="assets/img/piranga.png" >
+      <img class="header__logo"  src="assets/img/pirangaHembra.jpg" >
       <nav class="header__navigation">
           <ul class="header__listItems">
               <li class="header__item">
                   <a class="header__link" href="#" routerLink="/formacion"></a>
               </li>
               <li class="header__item">
-                  <a class="header__link" href="#" routerLink="/principalParques">Aire en mi parque</a>
+                  <a class="header__link" href="#" routerLink="/principalParques">Inicio</a>
               </li>
               <li class="header__item">
                   <a class="header__link" href="#" *ngIf="authService.user$ | async; else noUser" (click)="authService.logout()">Logout</a>
@@ -21,6 +21,9 @@
   </div>
   <div class="banner" *ngIf="authService.user$ | async as user;">
     <p class="banner__name">Hola {{user.displayName}} !</p>
+
+    
+    
   </div>
   
   <div>
@@ -33,6 +36,7 @@
           <p class="footer__font">
             Respiratón Colombia 2021 - Hackathon Virtual sobre Calidad del Aire<br>
               AireAlParque <br>
+              Alianza Piranga <br>
               <img class="footer__logo"  src="assets/img/piranga.png" >
           </p> 
         </footer>

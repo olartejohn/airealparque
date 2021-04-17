@@ -1,40 +1,53 @@
 <div class="form_container">
     <form action="" class="form_component">
         <div class="content_data">
-            <label class="font_data" for="fname">Talla:</label>
-            <input  class="select__form" autocomplete="off" type="text" id="lname"><br>
             <label class="font_data" for="fname">Edad:</label>
             <input  class="select__form" autocomplete="off" type="text" id="lname"><br>
-            <label class="font_data" for="Cname">Peso: </label>
-                <input  class="select__form" autocomplete="off" type="text" id="lname"><br>
+            <label class="font_data" for="fname">Talla(cm):</label>
+            <input  class="select__form" autocomplete="off" type="text" id="lname"><br>
+            <label class="font_data" for="Cname">Peso(kg): </label>
+            <input  class="select__form" autocomplete="off" type="text" id="lname"><br>
+            <label class="font_data" for="Cname">Sexo: </label>
+                <select class="select__form">
+                    <option *ngFor="let genero of generos" >
+                      {{ genero.value }}
+                    </option>
+                </select><br>  
+                
             <label class="font_data" for="fname">Parque:</label>
-            <select class="select__form">
-                <option *ngFor="let parque of parques" >
-                  {{ parque.value }}
-                </option>
-              </select><br>
+                <select class="select__form">
+                    <option *ngFor="let parque of parques" >
+                        {{ parque.value }}
+                    </option>
+                </select><br>
+            <label class="font_data" for="fname">Precondiciones respiratorias:</label>
+            <ng-select class="select__multiple__form" [items]="precondiciones"
+            bindLabel="value"
+            multiple="true"
+           >
+        </ng-select><br>
             
-            <label class="font_data" for="fname">Rango Horario:</label>
-            <select class="select__form">
-                <option *ngFor="let dia of dias" >
-                  {{ dia.value }}
-                </option>
-              </select><br>
-            
-        </div>
-        <div class="">
-            <div class="actions">
-                <button type="submit" class="btn_form">recomendación</button>
-            </div>
-
-        </div>
-       
-    </form>
-    <div class="bot__telegram">
-        <a href="https://t.me/respirabot_bot" class="bot_header__link" target="_blank">
-            <img class="bot_content__button" src="assets/img/telegram.png" >
-            <p>suscribite al bot</p>
-        </a>
     </div>
+    <div class="">
+        <div class="actions">
+            <button type="submit" class="btn_form">recomendación</button>
+        </div>
+        
+    </div>
+    
+</form>
+<div class="bot__telegram">
+    <a href="https://t.me/respirabot_bot" class="bot_header__link" target="_blank">
+        <img class="bot_content__button" src="assets/img/telegram.png" >
+        <p>suscribite al bot</p>
+    </a>
+</div>
+<label class="font_data__white" for="fname">Completa el formulario Versión corta del Cuestionario Internacional de Actividad Física de los últimos 7 días (IPAQ), en formato autoadminstrado, para uso con jóvenes y adultos de 15 a 69 años de edad, para tener en cuenta tu nivel de actividad fisica</label>
+<div class="formulario__content">
+    <iframe class="formulario__embed" src="https://capas-c.eu/test/cuestionario-internacional-de-actividad-fisica/" title="CUESTIONARIO INTERNACIONAL DE ACTIVIDAD FISICA"  ></iframe>
+    
+</div>
+
+
 
 </div>

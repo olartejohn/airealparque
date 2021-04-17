@@ -10,7 +10,7 @@ export class CalculadoraComponent implements OnInit {
   generos:any[] = [
     { value: 'Femenino', viewValue: 'Femenino' },
     { value: 'Masculino', viewValue: 'Masculino' },
-    { value: 'Otro', viewValue: 'Otro' }
+    { value: 'Intersexual', viewValue: 'Intersexual' },
   ];
 
   edades:any[] = [
@@ -25,38 +25,29 @@ export class CalculadoraComponent implements OnInit {
     { value: 'Proxima semana'}
   ];
 
+  precondiciones:any[] = [
+    { value: 'Rinitis'},
+    { value: 'Asma'},
+    { value: 'Consumo de tabaco'},
+    { value: 'Sinusitis'},
+    { value: 'Disnea'}
+  ];
+
   parques:any[] = [
-    { value: 'Simón Bolívar ( sector central ) - Localidad de Teusaquillo'},
+    { value: 'CAYETANO CAÑIZARES-KENNEDY'},
     
-    { value: 'Country - Localidad de Usaquén'},
+    { value: 'URBANIZACION CIUDAD HAYUELOS ETAPAS II,III, IV Y V - FONTIBON'},
     
-    { value: 'Parque Nacional Enrique Olaya Herrera - Localidad de Santa Fé'},
+    { value: 'URBANIZACIÓN CIUDAD SALITRE SECTOR III SM III-12, SM III-13, SM III-18 - TEUSAQUILLO'},
     
-    { value: 'Tercer Milenio - Localidad de Santa Fé'},
+    { value: 'DESARROLLO JULIO FLORES - SUBA'},
     
-    { value: 'San Cristobal - Localidad de San Cristóbal'},
+    { value: 'BONANZA - ENGATIVA'},
     
-    { value: 'Velódromo deportivo Primera De Mayo - Localidad de San Cristóbal'},
+    { value: 'TABORA - ENGATIVA '},
     
     { value: 'El Tunal - Localidad de Tunjuelito'},
     
-    { value: 'El Recreo - Localidad de Bosa'},
-    
-    { value: 'Biblioteca El Tintal - Localidad de Kennedy'},
-    
-    { value: 'Timiza - Localidad de Kennedy'},
-    
-    { value: 'Cayetano Cañizares - Localidad de Kennedy'},
-    
-    { value: 'Zona Franca - Localidad de Fontibón'},
-    
-    { value: 'Bosque San Carlos - Localidad de Rafael Uribe'},
-    
-    { value: 'El Lago (Parque de los Novios)- Localidad Barrios Unidos '},
-    
-    { value: 'PRD - Parque Recreodeportivo - Localidad Barrios Unidos '},
-    
-    { value: 'Virgilio Barco - Localidad de Teusaquillo'}
   ];
   constructor() { }
 

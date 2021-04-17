@@ -9,6 +9,7 @@ import { ParquesComponent } from './parques/parques.component';
 import { AppRoutingModule } from './app.routing.module';
 import { PrincipalparquesComponent } from './principalparques/principalparques.component';
 import { CalculadoraComponent } from './calculadora/calculadora.component';
+import { NgSelectModule } from '@ng-select/ng-select';
 
 
 
@@ -22,7 +23,8 @@ import { CalculadoraComponent } from './calculadora/calculadora.component';
   imports: [
     BrowserModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
-    AppRoutingModule
+    AppRoutingModule,
+    NgSelectModule
   ],
   providers: [AuthService],
   bootstrap: [AppComponent]

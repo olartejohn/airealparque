@@ -1,4 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~@ng-select/ng-select/themes/default.theme.css";
 @font-face {
     font-family: "Gothic";
     src: local("Gothic"), url(./assets/fonts/LeagueGothicRegular.otf) format("truetype");
@@ -27,9 +28,10 @@ body {
 
 .header__logo {
     width: 250px;
-    height: 163px;
+    height: 188px;
     margin-left: 25px;
     font-weight: bold;
+    border-radius: 30%;
 }
 
 .footer__logo {
@@ -133,7 +135,6 @@ body {
 
 
 .bot__telegram{
-    padding-top: 300px;
     display: flex;
     justify-content: right;
     
@@ -175,4 +176,33 @@ body {
     font-size: 50px;
     text-transform: uppercase;
     padding-left: 150px;
+}
+
+.content__button_calculator{
+    width: 113px;
+    height: 250px;
+
+}
+.formulario__content{
+    padding-top: 30px;
+    padding-left: 65px;
+}
+.formulario__embed{
+    
+    width: 960px;
+    height:615px;
+}
+.select__multiple__form{
+    padding-left: 65px;
+    font-family: "Gothic";
+    font-size: 20px;
+    width:615px;
+
+}
+.font_data__white{
+    padding-left: 65px;
+    color:white;
+    font-family: "Gothic";
+    font-size: 25px; 
+    
 }
