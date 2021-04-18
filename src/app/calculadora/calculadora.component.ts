@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { NgForm } from '@angular/forms';
+
 
 @Component({
   selector: 'app-calculadora',
@@ -7,6 +9,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CalculadoraComponent implements OnInit {
  
+  message= false;
+
+
   generos:any[] = [
     { value: 'Femenino', viewValue: 'Femenino' },
     { value: 'Masculino', viewValue: 'Masculino' },
@@ -30,7 +35,12 @@ export class CalculadoraComponent implements OnInit {
     { value: 'Asma'},
     { value: 'Consumo de tabaco'},
     { value: 'Sinusitis'},
-    { value: 'Disnea'}
+    { value: 'Disnea'},
+    { value: 'Diabetes'},
+    { value: 'EPOC'},
+    { value: 'Cancer'},
+    { value: 'Enfermedad cardiovascular'}
+
   ];
 
   parques:any[] = [
@@ -52,6 +62,12 @@ export class CalculadoraComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+   this.message = false;
+   console.log("valor de  message", this.message);
   }
 
+  onSubmit(){
+    console.log("valor de  message", this.message);
+    this.message = true;
+  }
 }

@@ -3,6 +3,13 @@
 @font-face {
     font-family: "Gothic";
     src: local("Gothic"), url(./assets/fonts/LeagueGothicRegular.otf) format("truetype");
+  
+    
+}
+@import "~@ng-select/ng-select/themes/default.theme.css";
+@font-face {
+    font-family: "Chaparral";
+    src: local("Chaparral"), url(./assets/fonts/ChaparralPro-Regular.otf) format("truetype");
 }
 .container {
     height: 100%;
@@ -23,7 +30,6 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 60px;
 }
 
 .header__logo {
@@ -84,20 +90,19 @@ body {
     transform: translateY(-5px);
 
 }
-.banner{
-    display: flex;
-}
-.parques_map{
 
+.parques_map{
     width: 960px;
     height:615px;
     
     
 }
 .parques_frame{
+    
     display: flex;
     justify-content: center;
-    align-items: center;
+    padding-bottom: 100px;
+
 }
 .font_data{
     color: rgb(7, 7, 133);
@@ -186,6 +191,8 @@ body {
 .formulario__content{
     padding-top: 30px;
     padding-left: 65px;
+    display: flex;
+    justify-content: center;
 }
 .formulario__embed{
     
@@ -196,7 +203,7 @@ body {
     padding-left: 65px;
     font-family: "Gothic";
     font-size: 20px;
-    width:615px;
+    width:315px;
 
 }
 .font_data__white{
@@ -206,3 +213,41 @@ body {
     font-size: 25px; 
     
 }
+.welcome__banner{
+    display: flexbox;
+    justify-content: center;
+}
+.welcome__font{
+    padding-left: 65px;
+    color:white;
+    font-family: "Chaparral";
+    font-size: 1.5em;    
+    text-align: center;
+}
+.message__font{
+    padding-left: 65px;
+    color:#015080;
+    font-family: "Chaparral";
+    font-size: 1.5em;    
+    text-align: center;
+}
+.calculadora__banner__font{
+    text-decoration: none;
+    color: #015080;
+    font-family: "Gothic";
+    font-size: 50px;
+    text-transform: uppercase;
+    padding-left: 150px;
+}
+.message_div{
+    padding-top: 60px;
+}
+.title__message{
+    padding-left: 65px;
+    text-decoration: none;
+    color: yellow;
+    font-family: "Gothic";
+    font-size: 50px;
+    text-transform: uppercase;  
+}
+

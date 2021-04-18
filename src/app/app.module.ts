@@ -10,6 +10,7 @@ import { AppRoutingModule } from './app.routing.module';
 import { PrincipalparquesComponent } from './principalparques/principalparques.component';
 import { CalculadoraComponent } from './calculadora/calculadora.component';
 import { NgSelectModule } from '@ng-select/ng-select';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -24,7 +25,8 @@ import { NgSelectModule } from '@ng-select/ng-select';
     BrowserModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AppRoutingModule,
-    NgSelectModule
+    NgSelectModule,
+    FormsModule
   ],
   providers: [AuthService],
   bootstrap: [AppComponent]

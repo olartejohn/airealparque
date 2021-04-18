@@ -1,5 +1,13 @@
+<div class="calculadora__banner">
+    <p class="calculadora__banner__font">¿List@ para empezar?</p>
+</div>
+<div class="welcome__banner">
+    <p class="welcome__font">Te ayudaremos a planear tu día con el momento de menor contaminación atmosférica  hecho por Alianza Piranga. <br>Ingresa los siguientes datos para mostrarte un pronostico de Calidad del aire en el parque mas cercano,<br> tipo de actividad fisica sugerida y la hora ideal.
+       <br> Tambien puedes suscribirte a nuestro bot de telegram para recibir notificaciones.
+    </p>
+</div>
 <div class="form_container">
-    <form action="" class="form_component">
+    <form  class="form_component" >
         <div class="content_data">
             <label class="font_data" for="fname">Edad:</label>
             <input  class="select__form" autocomplete="off" type="text" id="lname"><br>
@@ -20,32 +28,41 @@
                         {{ parque.value }}
                     </option>
                 </select><br>
-            <label class="font_data" for="fname">Precondiciones respiratorias:</label>
+            <label class="font_data" for="fname">Morbilidades:</label>
             <ng-select class="select__multiple__form" [items]="precondiciones"
-            bindLabel="value"
-            multiple="true"
-           >
-        </ng-select><br>
+                    bindLabel="value"
+                    multiple="true">
+            </ng-select><br>
             
-    </div>
+        </div>
     <div class="">
         <div class="actions">
-            <button type="submit" class="btn_form">recomendación</button>
+            <button type="submit" (click)="onSubmit()" class="btn_form">recomendación</button>
         </div>
         
     </div>
     
 </form>
+<div class="message_div">
+    <p class="title__message" *ngIf="message">Aqui esta tu recomendación:</p>
+    <p class="message__font" *ngIf="message">Mañana la calidad del  es favorable para una actividad moderada en el parque:<br> xxxxx cerca a tu casa<br>
+
+        Te recomendamos realizar alguno de los siguientes ejercicios:<br>
+        xxx
+        xxx
+        en horario entre las xxx  las xxxx (mañana/tarde)
+        </p>
+    
+</div>
 <div class="bot__telegram">
     <a href="https://t.me/respirabot_bot" class="bot_header__link" target="_blank">
         <img class="bot_content__button" src="assets/img/telegram.png" >
-        <p>suscribite al bot</p>
+        <p>suscribete al bot</p>
     </a>
 </div>
 <label class="font_data__white" for="fname">Completa el formulario Versión corta del Cuestionario Internacional de Actividad Física de los últimos 7 días (IPAQ), en formato autoadminstrado, para uso con jóvenes y adultos de 15 a 69 años de edad, para tener en cuenta tu nivel de actividad fisica</label>
 <div class="formulario__content">
     <iframe class="formulario__embed" src="https://capas-c.eu/test/cuestionario-internacional-de-actividad-fisica/" title="CUESTIONARIO INTERNACIONAL DE ACTIVIDAD FISICA"  ></iframe>
-    
 </div>
 
 
