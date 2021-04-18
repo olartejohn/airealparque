@@ -1,0 +1,14 @@
+name: Respiraton
+title: Respiraton
+username:
+account: jpfonsecaza
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 3980802
+bundleId: 4484998
+url: https://jpfonsecaza.shinyapps.io/Respiraton/
+when: 1618702503.45631
+lastSyncTime: 1618702503.45631
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: .RData|CanAirIO_dailytrends_OpenAir.R|Canairio_get_data.R|canairio_sensores.gpkg|PM2.5_BOG_CHA_Virrey_E01.png|PM2.5_BOG_ENG_EstacionFerias.png|PM2.5_BOG_ENG_SML_E05.png|PM2.5_BOG_ENG_Tibabuyes_E08.png|PM2.5_BOG_FON_Hayuelos_E01.png|PM2.5_BOG_KEN_EstacionKennedy.png|PM2.5_BOG_TEU_Salitre_E02.png|PM2.5_BOG_TUN_EstacionTunal.png|PM2.5_CUN_SUA_Altico_E02.png|Presentation1.pptx|timeseries_example.png
