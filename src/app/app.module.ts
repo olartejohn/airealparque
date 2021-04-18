@@ -11,6 +11,7 @@ import { PrincipalparquesComponent } from './principalparques/principalparques.c
 import { CalculadoraComponent } from './calculadora/calculadora.component';
 import { NgSelectModule } from '@ng-select/ng-select';
 import { FormsModule } from '@angular/forms';
+import { PremiumComponent } from './premium/premium.component';
 
 
 
@@ -19,7 +20,8 @@ import { FormsModule } from '@angular/forms';
     AppComponent,
     ParquesComponent,
     PrincipalparquesComponent,
-    CalculadoraComponent
+    CalculadoraComponent,
+    PremiumComponent
   ],
   imports: [
     BrowserModule,

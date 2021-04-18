@@ -209,8 +209,10 @@ body {
 .font_data__white{
     padding-left: 65px;
     color:white;
-    font-family: "Gothic";
-    font-size: 25px; 
+    font-family: "Chaparral";
+    font-size: 1.5em;    
+    text-align: center;
+
     
 }
 .welcome__banner{
@@ -249,5 +251,15 @@ body {
     font-family: "Gothic";
     font-size: 50px;
     text-transform: uppercase;  
+}
+.premium__image{
+    width: 960px;
+    height:615px;
+    padding-bottom: 60px;
+        
+}
+.premium__image__container{
+    display: flex;
+    justify-content: center;
 }
 
