@@ -1,0 +1,7 @@
+name='Pagina Web de Aire al parque',
+version='1.0.0',
+license='GPLv3',
+author_email='',
+author='Alianza piranga',
+description='',
+url='https://aire-al-parque.web.app/principalParques'
