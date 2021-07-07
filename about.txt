@@ -1,0 +1,7 @@
+name='Pagina Web de Aire al parque',
+version='1.0.0',
+license='GPLv3',
+author_email='alianzapiranga@gmail.com',
+author='Alianza piranga',
+description='pagina web principal del proyecto de aire al parque, de alianza piranga en la respiraton',
+url='https://aire-al-parque.web.app/principalParques'
